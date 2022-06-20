@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
+/* top section */
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-2 {
+    display: flex;
+}
+
+.top-left {
+    width: 450px;
+    background-color: rgb(231, 233, 234);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left-2 {
+    width: 450px;
+    background-color: rgb(227, 20, 110);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(89, 50, 203);
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.big-letter {
+    position: absolute;
+    bottom: 758px;
+    font-size: 500px;
+    height: 400px;
+    opacity: 0.3;
+    transform: rotate(43deg);
+    left: 845px;
+}
+
+.hero-title {
+    text-align: right;
+    margin: 0px 120px 0px 0px;
+    color: darkslategray;
+    max-width: 700px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
+
+.hero-title h1 {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom:0;
+    line-height: 61px;
+    font-size: 58px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    width: 340px;
+}
+
+.hero-subtitle-2 {
+    font-size: 16px;
+    width: 340px;
+    color: yellow;
+    line-height: 25px;
+    z-index:1;
+}
+
+.invisible {
+    display: none;
+}
+
+.star-logo {
+    background-color: rgb(89, 50, 203);
+    padding: 0px 8px 20px 8px;
+    border-radius: 50px;
+    color: yellow;
+    font-size: 48px;
+    text-align: center;
+    width: fit-content;
+    height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box-2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box-2 h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 777px;
+    height: 600px;
+    opacity: 0.3;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100px;
+}
+
+.logo-box h2 {
+    font-size: 30px;
+    color:darkslategray;
+}
+
+.navigation {
+    display: flex;
+    gap: 28px;
+    margin: 40px 100px 40px 0px;
+    padding: 20px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:rgb(83, 104, 104);
+    font-weight: 600;
+}
+
+.navigation a.last-link {
+    color: rgb(89, 50, 203);
+    border: 3px solid rgb(89, 50, 203);
+    padding: 10px 20px;
+}
+
+
+/* circle section */
+.circle-art {
+    left: 174px;
+    position: relative;
+    top: -53px;
+}
+
+.circle-art img {
+    width: 454px;
+}
+
+.circle-art h1 {
+    position: absolute;
+    z-index: 200;
+    bottom: 60px;
+    right: 61px;
+    font-size: 57px;
+    margin: 0;
+    padding: 0;
+    color: rgb(89, 50, 203);
+    letter-spacing: -1px;
+}
+
+.circle-art p {
+    position: absolute;
+    z-index: 200;
+    bottom: 38px;
+    right: 61px;
+    font-size:27px;
+    margin: 0;
+    padding: 0;
+    color: rgb(89, 50, 203);
+    letter-spacing: -1px;
+}
+
+
+/* responsive */
+
+
+@media screen and (max-width: 1050px) {
+    .top {
+        display: block;
+    }
+    .menu-box {
+        display: none;
+    }
+    .invisible {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+        height: 20px;
+    }
+    .hero-title {
+        align-items: self-start;
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+    .hero-title h1{
+        margin: 155px 0px 20px 0px;
+        text-align: left;
+    }
+
+    .hero-title p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .top-2 {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    .circle-art {
+        left: 12px;
+        top: -10px;
+    }
+
+    .circle-art img{
+        width: 400px;
+    }
+
+    .circle-art h1 {
+        bottom: 55px;
+        right: 102px;
+    }
+
+    .circle-art p {
+        bottom: 34px;
+        right: 102px;
+    }
+}
